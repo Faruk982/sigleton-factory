@@ -7,9 +7,13 @@ public class ShapeFactory {
         }
         if(shapeType.equalsIgnoreCase("RECTANGLE")){
             return new Rectangle();
-        } else if(shapeType.equalsIgnoreCase("SQUARE")){
+        }
+        else if(shapeType.equalsIgnoreCase("SQUARE")){
             return new Square();
         }
-        return null;
+        else{
+            return new Circle();
+        }
+      // return null;
     }
 }
